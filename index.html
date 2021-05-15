@@ -1,1 +1,8 @@
-Test
+<body onload="redirect()">
+</body>
+<script>
+    function redirect(){
+      var redir_token = window.location.href.split("?")[1]
+      window.location.href = "www.google.com/" + redir_token
+    }
+</script>
